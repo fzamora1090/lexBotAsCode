@@ -70,9 +70,9 @@ for lambdafile in lambda_yaml:
         )
     except Exception as e:
         print "do lambda create"
-        shutil.make_archive(%s %lambdadef["FucntionName"], 'zip', "code")
+        shutil.make_archive(%s %lambdadef["FunctionName"], 'zip', "code")
         def lambdadef["code"]["file"]
-        lambdadef["Code"]["ZipFile"] = open("%s.zip" %lambdadef["FUnctiuonName"], 'rb').read()
+        lambdadef["Code"]["ZipFile"] = open("%s.zip" %lambdadef["FunctionName"], 'rb').read()
         lambdaaws.create_fucntion(**lambdadef)
 
         lambdaaws.add_permission(

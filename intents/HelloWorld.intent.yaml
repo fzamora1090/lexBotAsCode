@@ -1,5 +1,5 @@
 name: "HelloWorld"
-description: "Bot syas hello"
+description: "Bot says hello"
 slots:
     - name: "Name"
         description: "The supplied name"
