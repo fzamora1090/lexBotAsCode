@@ -1,0 +1,29 @@
+FunctionName: "SayHello"
+Runtime: "python3.6"
+Role: "arn:aws:iam::878047780435:role/service-role/LexLambda"
+Handler: "sayhello.execute"
+Code:
+    file: "sayhello.py"
+    # 'zipfile': b'bytes'
+    # 'S3Bucket': 'string'
+    # 'S3Key': 'string'
+    # 'S3ObjectVersion': 'string'
+Description: "A lambda function to say hello to the provided name"
+Timeout: 3
+MemorSize: 128
+Publish: True
+# VpcConfig:
+#     SubnetIds:
+#         - "value"
+#     SecurityGroupIds:
+#         - "value"
+# DeadLetterConfig:
+#     TargetArn:
+# Environment:
+#     Variables:
+#         ET: "PhoneHome"
+# KMSKeyArn: "{arn}"
+# TracingConfig:
+#     Mode: "Active" #"PassThrough"
+# Tags:
+#     ET: "PhoneHome"

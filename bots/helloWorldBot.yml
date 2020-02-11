@@ -1,0 +1,19 @@
+name: "HelloWorldBot"
+description: "A Hello World Bot"
+intents:
+    - intentName: "HelloWorld"
+        intentVersion: "$LATEST"
+    # - intentName: "goodbye"
+    #     intentVeersion: 1
+clarificationPrompt:
+    messages:
+        - contentType: 'PlainText'
+            content: "I do not udnerstand, please reword your query."
+    maxAttempts: 2
+abortStatement:
+    messages:
+        - contentType: 'PlainText'
+            content: "I do not understand, please reword your query."
+idleSessionTTLinSeconds: 123
+locale: 'en-us'
+childDirected: False
